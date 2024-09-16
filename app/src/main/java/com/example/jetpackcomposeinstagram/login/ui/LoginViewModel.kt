@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class LoginViewModel @Inject constructor(private val loginUseCase: LoginUseCase) : ViewModel() {
     private val _email = MutableLiveData<String>()
-    val email: LiveData<String> = _email
+        val email: LiveData<String> = _email
     private val _password = MutableLiveData<String>()
     val password: LiveData<String> = _password
     private val _isLoginEnabled = MutableLiveData<Boolean>()
